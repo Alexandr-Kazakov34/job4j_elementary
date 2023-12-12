@@ -4,14 +4,16 @@ public class RectangleArea {
     public static double square(double p, double k) {
         double h = p / (2 * (k + 1));
         double l = h * k;
-        double result = l * h;
-        return result;
+        return l * h;
+
     }
 
     public static void main(String[] args) {
         double result = RectangleArea.square(4, 1);
         double result2 = RectangleArea.square(6, 2);
+        double result3 = RectangleArea.square(5, 3);
         System.out.println(" p = 4, k = 1, s = 1, real = " + result);
         System.out.println(" p = 6, k = 2, s = 2, real = " + result2);
+        System.out.println(" p = 5, k = 3, s = 2, real = " + result3);
     }
 }
