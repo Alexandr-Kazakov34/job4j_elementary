@@ -17,9 +17,9 @@ class PointTest {
     }
 
     @Test
-    void when23to45then2() {
-        double expected = 2.82;
-        int x1 = 2;
+    void whenMinus23to45then2Dot32() {
+        double expected = 6.32;
+        int x1 = -2;
         int y1 = 3;
         int x2 = 4;
         int y2 = 5;
@@ -28,9 +28,9 @@ class PointTest {
     }
 
     @Test
-    void when12to26then4() {
-        double expected = 4.12;
-        int x1 = 1;
+    void whenMinus12to26then5() {
+        double expected = 5;
+        int x1 = -1;
         int y1 = 2;
         int x2 = 2;
         int y2 = 6;
@@ -39,7 +39,7 @@ class PointTest {
     }
 
     @Test
-    void when34to57then3() {
+    void when34to57then3Dot60() {
         double expected = 3.60;
         int x1 = 3;
         int y1 = 4;
