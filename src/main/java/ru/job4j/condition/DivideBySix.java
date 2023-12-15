@@ -12,6 +12,7 @@ public class DivideBySix {
         } else {
             result = "The number doesn't divide by 3 and it isn't the even number.";
         }
+
         return result;
     }
 }
