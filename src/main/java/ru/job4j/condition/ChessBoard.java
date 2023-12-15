@@ -5,12 +5,13 @@ public class ChessBoard {
         int result = 0;
         if (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)) {
-            if (x1 == y1 || x2 == y2) {
-                result = Math.abs(y1 - x1);
-                result = result == 0 ? Math.abs(y2 - x2) : result;
+            if (Math.abs(x1 - x2) == Math.abs(y2 - y1)) {
+                result = Math.abs(x1 - x2);
+                result = result == 0 ? Math.abs(y1 - y2) : result;
             }
         }
         return result;
+
     }
 
     private static boolean isValid(int coordinate) {
