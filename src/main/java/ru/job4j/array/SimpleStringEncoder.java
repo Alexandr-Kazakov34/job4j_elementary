@@ -16,7 +16,7 @@ public class SimpleStringEncoder {
             }
 
         }
-        result += symbol == input.charAt(input.length() - 1) && counter > 1 ? Character.toString(symbol) + counter : Character.toString(symbol);
+        result += counter > 1 ? Character.toString(symbol) + counter : Character.toString(symbol);
         return result;
     }
 }
